@@ -47,7 +47,7 @@ function total() {
 function removeFromCart(item) {
   if (item) {
    for (var i = 0; i < cart.length; i++);
-    cart.splice(0, item);
+    cart.splice(0, item["itemName"]);
    return cart;
  } else {
    return 'That item is not in your cart.';
