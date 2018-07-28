@@ -26,7 +26,8 @@ function viewCart() {
     return `In your cart, you have ${itemAndPrices}.`
           }    
       } else if (cart.length === 2) {
-        return `In your cart, you have ${itemAndPrices[i]}, and ${itemAndPrices[i++]}.`
+        itemAndPrices.join(' , and ')
+        return `In your cart, you have ${itemAndPrices}.`
       } else if (cart.length >= 3) {
         itemAndPrices.join('  ,   ,  and ')
       }
