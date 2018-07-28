@@ -51,10 +51,8 @@ function removeFromCart(item) {
    return cart;
     } 
      }
-    if (cart[i]["itemName"] !== item) {
-     return "That item is not in your cart."
+        return "That item is not in your cart."
     }
-  }
 
 function placeOrder(cardNumber) {
   if (cardNumber) {
