@@ -28,11 +28,11 @@ function viewCart() {
           }   
         return `In your cart, you have ${itemAndPrices.join(', and ')}.`
       } else if (cart.length >= 3) {
-        var itemAndPrices = [];
+        var itemAndPrices2 = [];
     for (var i = 0; i < cart.length - 1; i++) {
-      itemAndPrices.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`);
+      itemAndPrices2.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`);
           } 
-        return `In your cart, you have ${itemAndPrices.join(',  ')}, and ${cart[cart.length - 1]["itemName"]} at $${cart[cart.length - 1]["itemPrice"]}.`
+        return `In your cart, you have ${itemAndPrices2.join(',  ')}, and ${cart[cart.length - 1]["itemName"]} at $${cart[cart.length - 1]["itemPrice"]}.`
       }
 }
 
