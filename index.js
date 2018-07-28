@@ -23,13 +23,14 @@ function viewCart() {
     var itemAndPrices = [];
     for (var i = 0; i < cart.length; i++) {
       itemAndPrices.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`);
-    }    
+    return `In your cart, you have ${itemAndPrices}.`
+          }    
       } else if (cart.length === 2) {
-        itemAndPrices.join('  ,  and ')
+        return `In your cart, you have ${itemAndPrices[0]}, and ${itemAndPrices[1]}.`
       } else if (cart.length >= 3) {
         itemAndPrices.join('  ,   ,  and ')
       }
-return `In your cart, you have ${itemAndPrices}.`
+
 }
 
 function total() {
