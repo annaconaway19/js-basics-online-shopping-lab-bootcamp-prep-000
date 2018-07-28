@@ -23,15 +23,14 @@ function viewCart() {
     return `In your cart, you have ${cart[0]["itemName"]} at $${cart[0]["itemPrice"]}.`
     } else if (cart.length === 2) {
         var itemAndPrices = [];
-    for (var i = 0; i < cart.length; i++) {
-     debugger
-      itemAndPrices.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice}`);
+         for (var i = 0; i < cart.length; i++) {
+          itemAndPrices.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`);
           }   
         return `In your cart, you have ${itemAndPrices.join(', and ')}.`
-      } else if (cart.length >= 3) {
+    } else if (cart.length >= 3) {
         var itemAndPrices2 = [];
-    for (var i = 0; i < cart.length - 1; i++) {
-      itemAndPrices2.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`);
+         for (var i = 0; i < cart.length - 1; i++) {
+           itemAndPrices2.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`);
           } 
         return `In your cart, you have ${itemAndPrices2.join(',  ')}, and ${cart[cart.length - 1]["itemName"]} at $${cart[cart.length - 1]["itemPrice"]}.`
       }
