@@ -23,9 +23,9 @@ function viewCart() {
     return `In your cart, you have ${cart[0]["itemName"]} at $${cart[0]["itemPrice"]}.`
     } else if (cart.length === 2) {
         var itemAndPrices = [];
-    for (var i = 0; i < cart.length; i++) {
+    for (var i = 0; i < getCart().length; i++) {
      debugger
-      itemAndPrices.push(`${getCart()[i].itemName} at $${getCart()[i].itemPrice}`);
+      itemAndPrices.push(`${getCart()[i]["itemName"]} at $${getCart()[i].itemPrice}`);
           }   
         return `In your cart, you have ${itemAndPrices.join(', and ')}.`
       } else if (cart.length >= 3) {
