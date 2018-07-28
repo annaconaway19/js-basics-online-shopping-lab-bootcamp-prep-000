@@ -49,7 +49,7 @@ function removeFromCart(item) {
    for (var i = 0; i < cart.length; i++);
     cart.splice(0, item[i]["itemName"]);
    return cart;
- } else if (item !== true) {
+ } else {
    return 'That item is not in your cart.';
  }
 }
