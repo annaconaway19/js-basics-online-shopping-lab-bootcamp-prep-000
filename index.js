@@ -25,7 +25,7 @@ function viewCart() {
         var itemAndPrices = [];
     for (var i = 0; i < cart.length; i++) {
      debugger
-      itemAndPrices.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
+      itemAndPrices.push(`${getCart()[i].itemName} at $${getCart()[i].itemPrice}`);
           }   
         return `In your cart, you have ${itemAndPrices.join(', and ')}.`
       } else if (cart.length >= 3) {
