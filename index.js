@@ -26,12 +26,10 @@ function viewCart() {
     return `In your cart, you have ${itemAndPrices}.`
           }    
       } else if (cart.length === 2) {
-        itemAndPrices.join(' , and ')
-        return `In your cart, you have ${itemAndPrices}.`
+        return `In your cart, you have ${itemAndPrices.join(' , and ')}.`
       } else if (cart.length >= 3) {
         itemAndPrices.join('  ,   ,  and ')
       }
-
 }
 
 function total() {
